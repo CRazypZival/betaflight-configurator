@@ -47,6 +47,12 @@ export const bluetoothDevices = [
         writeCharacteristic: "0000db33-0000-1000-8000-00805f9b34fb",
         readCharacteristic: "0000db34-0000-1000-8000-00805f9b34fb",
     },
+    {
+        name: "CADDX",
+        serviceUuid: "0000cad0-0000-1000-8000-00805f9b34fb",
+        writeCharacteristic: "0000cad1-0000-1000-8000-00805f9b34fb",
+        readCharacteristic: "0000cad2-0000-1000-8000-00805f9b34fb",
+    },
 ];
 
 export const serialDevices = [
