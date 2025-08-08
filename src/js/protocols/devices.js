@@ -62,6 +62,7 @@ export const serialDevices = [
     { vendorId: 11836, productId: 22336 }, // AT32 VCP
     { vendorId: 12619, productId: 22336 }, // APM32 VCP
     { vendorId: 11914, productId: 9 }, // Raspberry Pi Pico VCP
+    { vendorId: 12346, productId: 4097 }, //Espressif
 ];
 
 export const usbDevices = {
@@ -80,6 +81,7 @@ export const vendorIdNames = {
     11836: "AT32",
     12619: "Geehy Semiconductor",
     11914: "Raspberry Pi Pico",
+    12346: "Espressif",
 };
 
 export const webSerialDevices = serialDevices.map(({ vendorId, productId }) => ({
