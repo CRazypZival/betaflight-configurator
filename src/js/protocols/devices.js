@@ -48,6 +48,12 @@ export const bluetoothDevices = [
         writeCharacteristic: "0000db33-0000-1000-8000-00805f9b34fb",
         readCharacteristic: "0000db34-0000-1000-8000-00805f9b34fb",
     },
+    {
+        name: "CADDX",
+        serviceUuid: "0000cad0-0000-1000-8000-00805f9b34fb",
+        writeCharacteristic: "0000cad1-0000-1000-8000-00805f9b34fb",
+        readCharacteristic: "0000cad2-0000-1000-8000-00805f9b34fb",
+    },
 ];
 
 export const serialDevices = [
@@ -63,6 +69,7 @@ export const serialDevices = [
     { vendorId: 12619, productId: 22336 }, // APM32 VCP
     { vendorId: 11914, productId: 9 }, // Raspberry Pi Pico VCP
     { vendorId: 12346, productId: 4097 }, //Espressif
+    { vendorId: 6790, productId: 29986 }, //CH340
 ];
 
 export const usbDevices = {
@@ -82,6 +89,7 @@ export const vendorIdNames = {
     12619: "Geehy Semiconductor",
     11914: "Raspberry Pi Pico",
     12346: "Espressif",
+    6790: "CH340",
 };
 
 export const webSerialDevices = serialDevices.map(({ vendorId, productId }) => ({
